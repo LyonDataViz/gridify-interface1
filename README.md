@@ -5,7 +5,7 @@ A demo interface for gridify:
 - frontend-only
 - requires a modern browser: ES modules, no transpilation
 
-Demo URL: https://gridify-inferface1.lyondataviz.now.sh/
+Demo URL: https://gridify-interface1.lyondataviz.now.sh/
 
 ## Install and run locally
 
@@ -25,7 +25,7 @@ must be done locally:
 npm run deploy
 ```
 
-The demo page https://gridify-inferface1.lyondataviz.now.sh/ should have been
+The demo page https://gridify-interface1.lyondataviz.now.sh/ should have been
 updated (a build is automatically done locally before deploying).
 
 Note: ensure you are member of the
