@@ -1,6 +1,6 @@
 # Gridify interface1
 
-An demo interface for gridify:
+A demo interface for gridify:
 
 - frontend-only
 - requires a modern browser: ES modules, no transpilation
