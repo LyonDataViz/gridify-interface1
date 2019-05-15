@@ -16,17 +16,21 @@ npm install
 npm run serve
 ```
 
-## Build and deploy to now.sh
+## Deploy to now.sh
 
-Until we setup an automatic deploy from GitHub on every push, deploy to now.sh
-must be done locally:
+Deploy to a personal domain (gridify-interface1-[MYUSER].lyondataviz.now.sh):
 
 ```bash
 npm run deploy
 ```
 
-The demo page https://gridify-interface1.lyondataviz.now.sh/ should have been
-updated (a build is automatically done locally before deploying).
+Deploy to the common demo page
+(https://gridify-interface1.lyondataviz.now.sh/) - it requires to be part of the
+[`lyondataviz` organization in now.sh](https://zeit.co/lyondataviz):
 
-Note: ensure you are member of the
-[lyondataviz](https://zeit.co/teams/lyondataviz) team in now.sh.
+```bash
+npm run deploy:common
+```
+
+Note that any push to the GitHub repository will also trigger a deployment on
+now.sh (you will receive a mail with the URL and its aliases).
