@@ -1,5 +1,5 @@
 {
-  "alias": ["https://gridify-interface1.lyondataviz.now.sh"],
+  "alias": ["gridify-interface1.lyondataviz.now.sh"],
   "builds": [{"src": "./dist/**", "use": "@now/static"}],
   "github": {"enabled": true},
   "name": "gridify-interface1",
