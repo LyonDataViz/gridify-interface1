@@ -32,8 +32,7 @@
   "homepage": "https://github.com/LyonDataViz/gridify-interface1#readme",
   "dependencies": {
     "@gridify/oddata": "^1.3.6",
-    "d3-dispatch": "^1.0.5",
-    "onchange": "^6.0.0"
+    "d3-dispatch": "^1.0.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
@@ -44,6 +43,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "husky": "^2.3.0",
     "now": "^15.3.0",
+    "onchange": "^6.0.0",
     "prettier": "^1.17.0",
     "rollup": "^1.13.1",
     "rollup-plugin-node-resolve": "^4.2.3",
