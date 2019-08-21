@@ -1,14 +1,10 @@
-import {get} from '@gridify/oddata';
+import {prepare as prepareSelect, init as initSelect} from './select';
+import {prepare as prepareSummary} from './summary';
+import {dispatch as d3Dispatch} from 'd3-dispatch';
 
-async function fillSelect() {
-  const list = await get();
-  const select = document.querySelector('select#datasets-list');
-  list.forEach(dataset => {
-    const option = document.createElement('option');
-    option.value = dataset.raw.Item;
-    option.text = dataset.title;
-    select.appendChild(option);
-  });
-}
+const dispatch = d3Dispatch(['select-dataset']);
 
-fillSelect();
+prepareSelect(dispatch).then(() => {
+  prepareSummary(dispatch);
+  initSelect();
+});
