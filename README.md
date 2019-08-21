@@ -16,6 +16,13 @@ npm install
 npm run serve
 ```
 
+To watch for changes and automatically update the served application while
+developing, run the following in a new terminal:
+
+```bash
+npm run watch
+```
+
 ## Deploy to now.sh
 
 Deploy to a personal domain (gridify-interface1-[MYNOWUSER].lyondataviz.now.sh):
