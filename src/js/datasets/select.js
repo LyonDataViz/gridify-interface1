@@ -13,11 +13,6 @@ function getDataset(data, selectValue) {
   return data.find(dataset => dataset.raw.Item === selectValue);
 }
 
-function selectFirstOption(selectElement) {
-  selectElement.selectedIndex = 0;
-  selectElement.dispatchEvent(new Event('change'));
-}
-
 export async function prepare(dispatch) {
   const selectElement = document.querySelector('select#datasets-list');
   const data = await get();
@@ -29,5 +24,5 @@ export async function prepare(dispatch) {
 
 export function init() {
   const selectElement = document.querySelector('select#datasets-list');
-  selectFirstOption(selectElement);
+  selectElement.dispatchEvent(new Event('change'));
 }

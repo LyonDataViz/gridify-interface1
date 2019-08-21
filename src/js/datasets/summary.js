@@ -21,7 +21,7 @@ async function fillTable(tableEl, dataset) {
     stretchH: 'all',
     width: 880,
     autoWrapRow: true,
-    height: 487,
+    height: 250,
     autoColumnSize: {
       samplingRatio: 23,
     },
@@ -44,7 +44,7 @@ export function prepare(dispatch) {
   const titleEl = summaryEl.querySelector('#summary-title');
   const tableEl = summaryEl.querySelector('#summary-table');
 
-  dispatch.on('select-dataset', dataset => {
+  dispatch.on('select-dataset.summary', dataset => {
     titleEl.textContent = `${dataset.title} - ${MAX_ROWS} first rows`;
     fillTable(tableEl, dataset);
   });
